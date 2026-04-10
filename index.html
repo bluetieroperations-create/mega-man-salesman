@@ -1,1 +1,4 @@
-﻿Set-Content -Path "C:\Users\maste\.openclaw\workspace\index.html" -Value (Get-Clipboard) -Encoding UTF8
+﻿Set-Content -Path "$env:USERPROFILE\.openclaw\workspace\index.html" -Value (Get-Clipboard) -Encoding UTF8
+git -C "$env:USERPROFILE\.openclaw\workspace" add index.html
+git -C "$env:USERPROFILE\.openclaw\workspace" commit -m "Major redesign Roberto Ariana Motors LV"  
+git -C "$env:USERPROFILE\.openclaw\workspace" push
